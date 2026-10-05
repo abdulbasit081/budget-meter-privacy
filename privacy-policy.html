@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Budget Meter Privacy</title>
+<meta name="description" content="Privacy policy for the Budget Meter app">
+<style>
+  :root {
+    --bg: #F4F7F6;
+    --surface: #FFFFFF;
+    --surface-2: #EDF3F1;
+    --text: #1B2430;
+    --text-muted: #5B6670;
+    --accent: #2E7D6B;
+    --accent-dark: #1F5B4E;
+    --accent-soft: #E3EFEC;
+    --border: #DEE6E2;
+    --good: #2E9E5B;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #101714;
+      --surface: #17211D;
+      --surface-2: #1C2823;
+      --text: #E7EEEB;
+      --text-muted: #9DB0A8;
+      --accent: #59C6A5;
+      --accent-dark: #3E9E82;
+      --accent-soft: #1E2E28;
+      --border: #26342E;
+      --good: #4FCB86;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #101714;
+    --surface: #17211D;
+    --surface-2: #1C2823;
+    --text: #E7EEEB;
+    --text-muted: #9DB0A8;
+    --accent: #59C6A5;
+    --accent-dark: #3E9E82;
+    --accent-soft: #1E2E28;
+    --border: #26342E;
+    --good: #4FCB86;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    padding: 0 20px;
+  }
+  h1, h2 {
+    font-family: "Newsreader", Georgia, "Times New Roman", serif;
+    color: var(--text);
+    font-weight: 600;
+    text-wrap: balance;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding-block: 40px 64px; }
+
+  header.top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+  .badge {
+    width: 44px; height: 44px; border-radius: 12px;
+    background: linear-gradient(160deg, var(--accent), var(--accent-dark));
+    flex: none;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .badge svg { width: 24px; height: 24px; }
+  header.top .name { font-size: 14px; font-weight: 600; color: var(--text-muted); letter-spacing: 0.02em; }
+
+  h1 { font-size: clamp(28px, 5vw, 38px); margin: 18px 0 6px; line-height: 1.15; }
+  .effective {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin: 0 0 28px;
+  }
+
+  .summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px;
+    margin-bottom: 36px;
+  }
+  .summary p.lede {
+    margin: 0 0 16px;
+    font-size: 16.5px;
+    color: var(--text);
+  }
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+  }
+  .stat {
+    background: var(--surface-2);
+    border-radius: 10px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .stat .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--good);
+    margin-top: 6px; flex: none;
+  }
+  .stat .label { font-size: 13.5px; font-weight: 600; }
+
+  section { margin-bottom: 30px; }
+  h2 { font-size: 21px; margin: 0 0 10px; }
+  p { margin: 0 0 14px; color: var(--text); }
+  p.muted { color: var(--text-muted); font-size: 14.5px; }
+  ul { margin: 0 0 14px; padding-inline-start: 22px; }
+  li { margin-bottom: 6px; }
+  code {
+    background: var(--surface-2);
+    padding: 1px 6px;
+    border-radius: 5px;
+    font-size: 0.92em;
+  }
+
+  .divider { height: 1px; background: var(--border); margin: 36px 0; border: 0; }
+
+  footer {
+    color: var(--text-muted);
+    font-size: 13.5px;
+  }
+  footer a { color: var(--accent); }
+
+  @media (max-width: 480px) {
+    .wrap { padding-block: 28px 48px; }
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="badge" aria-hidden="true">
+      <svg viewBox="0 0 100 100" fill="none">
+        <path d="M15 65a35 35 0 0 1 70 0" stroke="white" stroke-width="11" stroke-linecap="round"/>
+        <path d="M50 65 L64 38" stroke="white" stroke-width="9" stroke-linecap="round"/>
+        <circle cx="50" cy="65" r="6.5" fill="white"/>
+      </svg>
+    </div>
+    <div class="name">BUDGET METER</div>
+  </header>
+
+  <h1>Privacy Policy</h1>
+  <p class="effective">Effective October 5, 2026</p>
+
+  <div class="summary">
+    <p class="lede">Budget Meter is a personal budgeting app that keeps every number on your own phone. Here's the short version:</p>
+    <div class="stat-grid">
+      <div class="stat"><div class="dot"></div><div class="label">No data collected</div></div>
+      <div class="stat"><div class="dot"></div><div class="label">Nothing leaves your device</div></div>
+      <div class="stat"><div class="dot"></div><div class="label">No account or sign-in</div></div>
+      <div class="stat"><div class="dot"></div><div class="label">No ads or trackers</div></div>
+    </div>
+  </div>
+
+  <section>
+    <h2>What information the app stores</h2>
+    <p>Budget Meter stores everything you enter &mdash; your income and expense records, category names, budget limits, and your Urdu/English language choice &mdash; in a local database on your own device only (using standard on&#8209;device storage, SQLite and AsyncStorage). None of it is transmitted anywhere.</p>
+  </section>
+
+  <section>
+    <h2>What the app does <em>not</em> do</h2>
+    <ul>
+      <li>It does not send any data to us, to the developer, or to any third party &mdash; the app makes no network or internet requests of any kind.</li>
+      <li>It does not use analytics, crash reporting, or advertising SDKs.</li>
+      <li>It does not require or use an account, login, email address, or phone number.</li>
+      <li>It does not access your contacts, location, camera, microphone, or SMS messages.</li>
+      <li>It does not share, sell, or rent any information, because none is ever collected in the first place.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Where your data lives, and how to remove it</h2>
+    <p>Your entries stay in the app's private storage area on your device, governed by your operating system's normal app sandboxing. You can delete individual transactions or categories at any time from within the app. Uninstalling Budget Meter permanently deletes all of its stored data along with it &mdash; we have no copy to retain, because we never received one.</p>
+  </section>
+
+  <section>
+    <h2>Children's privacy</h2>
+    <p>Budget Meter does not knowingly collect information from anyone, including children, because it does not collect information at all. The app is a general-purpose household budgeting tool and is not directed specifically at children.</p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p class="muted">If this policy ever changes &mdash; for example, if a future version adds an optional cloud backup feature &mdash; this page will be updated and the "effective" date above will change accordingly. Any such feature would be opt-in and clearly disclosed before it collects anything.</p>
+  </section>
+
+  <hr class="divider">
+
+  <footer>
+    <p>Budget Meter is published by Wholeway Apps. Questions about this policy or the app can be sent to <a href="mailto:wholewayapps@gmail.com">wholewayapps@gmail.com</a>.</p>
+  </footer>
+</div>
+
+
+</body>
+</html>
